@@ -1,12 +1,23 @@
 {
-  "$jason": {
-    "head": {
-      "title": "Hellow World",
-      "description": "This app displays 'Hello World' on the screen",
-      "icon": "https://s3.amazonaws.com/jasonclient/hello.png",
-      "offline": "true",
-      ...
-    },
-    ...
-  }
+    "$jason": {
+        "head": {
+            "title": "Web Container Agent Demo",
+            "actions": {
+                "$load": {
+                    "type": "$agent.request",
+                    "options": {
+                        "id": "$webcontainer",
+                        "method": "add",
+                        "params": ["a", "b"]
+                    }
+                }
+            }
+        },
+        "body": {
+            "background": {
+                "type": "html",
+                "url": "file://app.html"
+            }
+        }
+    }
 }
