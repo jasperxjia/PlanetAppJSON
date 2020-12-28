@@ -16,7 +16,7 @@
         "body": {
             "background": {
                 "type": "html",
-                "url": "file://app.html"
+                "url": "https://planetapp.world"
             }
         }
     }
